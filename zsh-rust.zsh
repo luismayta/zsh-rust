@@ -19,9 +19,25 @@ function rust::install {
 
 function rust::custom {
     if (( $+commands[rustc] )); then
-        echo -e "${CLEAR}${LIGHT_GREEN}Installing required packages${CLEAR}"
-        rustup install nightly
+        async_init
+        # Start a worker that will report job completion
+        async_start_worker rust_worker_install -n
+        # Register our callback function to run when the job completes
+        async_register_callback rust_worker_install rust::completed::callback
+        # Start the job
+        async_job rust_worker_install rust::install::dependences
     fi
+}
+
+function rust::install::dependences {
+    echo -e "${CLEAR}${LIGHT_GREEN}Installing required packages${CLEAR}"
+    rustup install nightly
+    zstyle ':notify:*' success-title "Finished install dependences"
+}
+
+# Define a function to process the result of the job
+function rust::completed::callback {
+    async_job rust_worker_install rust::install::dependences
 }
 
 function rust::init {
