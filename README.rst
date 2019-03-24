@@ -6,7 +6,7 @@ Build
 
 |Build Status| |GitHub issues| |GitHub license|
 
-:Version: 0.0.0
+:Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-rust
 :Download: https://github.com/luismayta/zsh-rust
 :Source: https://github.com/luismayta/zsh-rust
