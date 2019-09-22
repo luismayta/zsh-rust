@@ -146,14 +146,14 @@ Feel free to contact me to discuss any issues, questions, or comments.
 
 |linkedin| |beacon| |made|
 
-Made with :coffee: and :pizza: by `luis mayta`_ and `okchaty`_.
+Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Links
 .. _`changelog`: CHANGELOG.rst
-.. _`contributors`: docs/AUTHORS
-.. _`contributing`: docs/CONTRIBUTING.rst
+.. _`contributors`: AUTHORS
+.. _`contributing`: docs/source/CONTRIBUTING.rst
 
-.. _`okchaty`: https://github.com/okchaty
+.. _`hadenlabs`: https://github.com/hadenlabs
 .. _`luis mayta`: https://github.com/luismayta
 
 
@@ -186,6 +186,6 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `okchaty`_.
 
 .. Dependences:
 
-.. _Python 3.6.4: https://www.python.org/downloads/release/python-364
+.. _Pyenv: https://github.com/pyenv/pyenv
 .. _Docker: https://www.docker.com/
 .. _Docker Compose: https://docs.docker.com/compose/
