@@ -2,9 +2,9 @@
 # https://docs.docker.com/compose/
 # Usage: docker-compose up
 ---
-version: "3"
-services:
+version: "3.6"
 
+services:
   app:
     build:
       context: .
