@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 #
-# Defines install zsh for osx or linux.
+# Defines install rust for osx or linux.
 #
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
@@ -32,6 +32,7 @@ function rust::custom {
 function rust::install::dependences {
     echo -e "${CLEAR}${LIGHT_GREEN}Installing required packages${CLEAR}"
     rustup install nightly
+    cargo install fselect
     zstyle ':notify:*' success-title "Finished install dependences"
 }
 
