@@ -4,7 +4,7 @@ How To Contribute
 .. contents::
    :local:
 
-Contributions to zsh-nvm are welcome.
+Contributions to zsh-rust are welcome.
 
 Getting Started
 ---------------
@@ -79,15 +79,6 @@ Run unit tests specified
 
     make test run={{path}}
 
-Ngrok
-^^^^^
-
-Run ngrok
-
-.. code-block:: bash
-
-    make ngrok.run
-
 
 Code Submission
 ---------------
@@ -149,5 +140,5 @@ Try to keep history as linear as possible using a `rebase` merge strategy.
 
 #. Delete merged Branch
 
-.. _Issue: https://github.com/luismayta/zsh-nvm/issues
-.. _Pull Request: https://github.com/luismayta/zsh-nvm/pulls
+.. _Issue: https://github.com/luismayta/zsh-rust/issues
+.. _Pull Request: https://github.com/luismayta/zsh-rust/pulls
