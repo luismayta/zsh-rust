@@ -50,8 +50,7 @@ function rust::completed::callback {
 
 function rust::init {
     # Add RUST to PATH for scripting
-    PATH=$(get_path)
-    [ -e "${HOME}/.cargo/bin" ] && export PATH="${PATH}:${HOME}/.cargo/bin"
+    path::prepend "${HOME}/.cargo/bin"
 }
 
 rust::init
