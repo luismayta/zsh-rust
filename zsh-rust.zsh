@@ -8,17 +8,24 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 
-LIGHT_GREEN='\033[1;32m'
-CLEAR='\033[0m'
+package_name=rust
+
+plugin_dir=$(dirname "${0}":A)
+
+# shellcheck source=/dev/null
+source "${plugin_dir}"/src/helpers/messages.zsh
+# shellcheck source=/dev/null
+source "${plugin_dir}"/src/helpers/tools.zsh
 
 function rust::install {
-    echo -e "${CLEAR}${LIGHT_GREEN}Installing RUST${CLEAR}"
+    message_info "Installing ${package_name}"
     curl https://sh.rustup.rs -sSf | sh
     rust::custom
+    message_succcess "Installed ${package_name}"
 }
 
 function rust::custom {
-    if (( $+commands[rustc] )); then
+    if ! type -p rustc > /dev/null; then
         async_init
         # Start a worker that will report job completion
         async_start_worker rust_worker_install -n
@@ -30,10 +37,10 @@ function rust::custom {
 }
 
 function rust::install::dependences {
-    echo -e "${CLEAR}${LIGHT_GREEN}Installing required packages${CLEAR}"
+    message_info "Installing packages required ${package_name}"
     rustup install nightly
     cargo install fselect
-    zstyle ':notify:*' success-title "Finished install dependences"
+    message_success "Installed packages required ${package_name}"
 }
 
 # Define a function to process the result of the job
@@ -43,11 +50,10 @@ function rust::completed::callback {
 
 function rust::init {
     # Add RUST to PATH for scripting
-    [[ -e "$HOME/.cargo/bin" ]] && export PATH="$HOME/.cargo/bin:$PATH"
+    PATH=$(get_path)
+    [ -e "${HOME}/.cargo/bin" ] && export PATH="${PATH}:${HOME}/.cargo/bin"
 }
 
 rust::init
 
-if (( ! $+commands[rustc] )); then
-    rust::install
-fi
+if ! type -p rustc > /dev/null; then rust::install; fi
