@@ -8,20 +8,13 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 
-package_name=rust
-
-plugin_dir=$(dirname "${0}":A)
-
-# shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/messages.zsh
-# shellcheck source=/dev/null
-source "${plugin_dir}"/src/helpers/tools.zsh
+rust_package_name=rust
 
 function rust::install {
-    message_info "Installing ${package_name}"
+    message_info "Installing ${rust_package_name}"
     curl https://sh.rustup.rs -sSf | sh
     rust::custom
-    message_succcess "Installed ${package_name}"
+    message_succcess "Installed ${rust_package_name}"
 }
 
 function rust::custom {
@@ -37,10 +30,10 @@ function rust::custom {
 }
 
 function rust::install::dependences {
-    message_info "Installing packages required ${package_name}"
+    message_info "Installing packages required ${rust_package_name}"
     rustup install nightly
     cargo install fselect
-    message_success "Installed packages required ${package_name}"
+    message_success "Installed packages required ${rust_package_name}"
 }
 
 # Define a function to process the result of the job
@@ -50,7 +43,7 @@ function rust::completed::callback {
 
 function rust::init {
     # Add RUST to PATH for scripting
-    path::prepend "${HOME}/.cargo/bin"
+    path_prepend "${HOME}/.cargo/bin"
 }
 
 rust::init
