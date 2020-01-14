@@ -9,6 +9,13 @@
 #
 
 rust_package_name=rust
+RUST_PLUGIN_DIR="$(dirname "${0}":A)"
+RUST_SOURCE_PATH="${RUST_PLUGIN_DIR}"/src
+
+
+# shellcheck source=/dev/null
+source "${RUST_SOURCE_PATH}"/base.zsh
+
 
 function rust::install {
     message_info "Installing ${rust_package_name}"
