@@ -39,7 +39,7 @@ function rust::install::dependences::async {
     if ! type -p rustc > /dev/null; then
         async_init
         # Start a worker that will report job completion
-        async_start_worker rust_worker_install -n
+        async_start_worker rust_worker_install -u
         # Register our callback function to run when the job completes
         async_register_callback rust_worker_install rust::completed::callback
         # Start the job
