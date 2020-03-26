@@ -5,7 +5,7 @@
 function curl::install {
     message_info "Installing curl"
     if ! type -p brew > /dev/null; then
-        message_warning "Please Install brew or use antibody bundle luismayta/zsh-brew branch:develop"
+        message_warning  "${RUST_MESSAGE_BREW_ERROR}"
         return
     fi
     brew install curl
