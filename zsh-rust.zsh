@@ -48,11 +48,11 @@ function rust::completed::callback {
     async_job rust_worker_install rust::install::dependences
 }
 
-function rust::init {
+function rust::load {
     # Add RUST to PATH for scripting
-    path_prepend "${HOME}/.cargo/bin"
+    [ -e "${HOME}/.cargo/bin" ] && export PATH="${HOME}/.cargo/bin:${PATH}"
 }
 
-rust::init
+rust::load
 
 if ! type -p rustc > /dev/null; then rust::install; fi
