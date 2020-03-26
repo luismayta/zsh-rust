@@ -23,11 +23,19 @@ source "${RUST_SOURCE_PATH}"/base.zsh
 function rust::install {
     message_info "Installing ${rust_package_name}"
     curl https://sh.rustup.rs -sSf | sh
-    rust::custom
+    rust::install::dependences::factory
     message_succcess "Installed ${rust_package_name}"
 }
 
-function rust::custom {
+function rust::install::dependences::factory {
+    if type -p async_init > /dev/null; then
+        rust::install::dependences::async
+        return
+    fi
+    rust::install::dependences
+}
+
+function rust::install::dependences::async {
     if ! type -p rustc > /dev/null; then
         async_init
         # Start a worker that will report job completion
@@ -48,7 +56,7 @@ function rust::install::dependences {
 
 # Define a function to process the result of the job
 function rust::completed::callback {
-    async_job rust_worker_install rust::install::dependences
+    message_succcess "Done"
 }
 
 function rust::load {
