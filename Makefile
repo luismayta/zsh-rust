@@ -66,6 +66,7 @@ help:
 	@echo '    environment               create environment with pyenv'
 	@echo '    setup                     install requirements'
 	@echo ''
+	@make alias.help
 	@make docker.help
 	@make docs.help
 	@make test.help
