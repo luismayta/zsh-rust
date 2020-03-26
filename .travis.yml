@@ -13,7 +13,7 @@ services:
 # https://docs.travis-ci.com/user/docker/
 env:
   global:
-    - DOCKER_COMPOSE_VERSION=1.23.2
+    - DOCKER_COMPOSE_VERSION=1.25.0
 
 before_install:
   - sudo rm /usr/local/bin/docker-compose
@@ -24,8 +24,8 @@ before_install:
 
 # install dependences
 install:
-  - pip install -r requirements/setup.txt
+  - make setup
 
 # execute test
 script:
-  - make test
+  - make test.lint
