@@ -24,6 +24,7 @@ pyyaml = "*"
 bumpversion = "*"
 bumplus = "*"
 pre-commit = "*"
+doc8 = "*"
 
 [packages]
 
