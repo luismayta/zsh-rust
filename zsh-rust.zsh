@@ -12,6 +12,9 @@ rust_package_name=rust
 RUST_PLUGIN_DIR="$(dirname "${0}":A)"
 RUST_SOURCE_PATH="${RUST_PLUGIN_DIR}"/src
 
+export RUST_MESSAGE_BREW_ERROR="Please Install brew or use antibody bundle luismayta/zsh-brew branch:develop"
+export RUST_MESSAGE_NVM_ERROR="Please Install nvm or use antibody bundle luismayta/zsh-nvm branch:develop"
+
 
 # shellcheck source=/dev/null
 source "${RUST_SOURCE_PATH}"/base.zsh
