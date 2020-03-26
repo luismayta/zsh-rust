@@ -12,7 +12,6 @@ This file uses change log convention from `keep a CHANGELOG`_.
 ++++++++++++++++++++++
 
 
-
 .. _`Unreleased`: https://github.com/luismayta/zsh-rust/compare/0.1.0...HEAD
 .. _`0.1.0`: https://github.com/luismayta/zsh-rust/compare/0.0.0...0.1.0
 .. _0.0.0: https://gitlab.com/luismayta/zsh-rust/compare/0.0.0...0.0.0
