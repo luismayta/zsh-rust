@@ -28,7 +28,7 @@ function rust::install {
 }
 
 function rust::install::dependences::factory {
-    if type -p async_init > /dev/null; then
+    if type async_init > /dev/null; then
         rust::install::dependences::async
         return
     fi
