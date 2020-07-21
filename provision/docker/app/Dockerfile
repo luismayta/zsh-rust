@@ -1,4 +1,4 @@
-FROM python:3.8.0-slim
+FROM equipindustry/python:3.8.0-slim
 
 MAINTAINER Luis Mayta <slovacus@gmail.com>
 
