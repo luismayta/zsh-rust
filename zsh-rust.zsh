@@ -24,7 +24,7 @@ function rust::install {
     message_info "Installing ${rust_package_name}"
     curl https://sh.rustup.rs -sSf | sh
     rust::install::dependences::factory
-    message_succcess "Installed ${rust_package_name}"
+    message_success "Installed ${rust_package_name}"
 }
 
 function rust::install::dependences::factory {
@@ -56,7 +56,7 @@ function rust::install::dependences {
 
 # Define a function to process the result of the job
 function rust::completed::callback {
-    message_succcess "Done"
+    message_success "Done"
 }
 
 function rust::load {
