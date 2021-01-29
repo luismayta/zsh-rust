@@ -1,5 +1,5 @@
 # ~/.tmuxinator/zsh-rust.yml
-name: zsh-pyenv
+name: zsh-rust
 root: ./
 # Optional tmux socket
 # socket_name: foo
