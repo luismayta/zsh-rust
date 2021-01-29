@@ -1,5 +1,5 @@
 #
-# See ./CONTRIBUTING.rst
+# See ./docs/contributing.md
 #
 yarn.help:
 	@echo '    yarn:'
