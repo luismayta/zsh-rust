@@ -40,7 +40,7 @@ DOCS_DIR:=$(ROOT_DIR)/docs
 README_TEMPLATE:=$(PROVISION_DIR)/templates/README.md.gotmpl
 
 export README_FILE ?= README.md
-export README_YAML ?= README.yaml
+export README_YAML ?= provision/generator/README.yaml
 export README_INCLUDES ?= $(file://$(shell pwd)/?type=text/plain)
 
 FILE_README:=$(ROOT_DIR)/README.md
