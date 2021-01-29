@@ -1,6 +1,6 @@
 {
   "name": "@luismayta/zsh-rust",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "zsh-rust for zsh",
   "repository": "ssh://git@github.com/luismayta/zsh-rust.git",
   "author": "Luis Mayta <slovacus@gmail.com>",
