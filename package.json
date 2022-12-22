@@ -45,7 +45,7 @@
     "prettier": "^2.1.1",
     "prettier-tslint": "^0.4.2",
     "rimraf": "^3.0.2",
-    "semantic-release": "^17.1.1",
+    "semantic-release": "^19.0.3",
     "sendmail": "^1.6.1",
     "shelljs": "^0.8.4",
     "ts-node": "^9.0.0",
