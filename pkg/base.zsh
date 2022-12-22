@@ -3,7 +3,7 @@
 
 function rust::dependences {
     message_info "Installing dependences for ${RUST_PACKAGE_NAME}"
-    if ! type -p curl > /dev/null; then rust::internal::curl::install; fi
+    if ! type -p curl > /dev/null; then core::install curl; fi
     message_success "Installed dependences for ${RUST_PACKAGE_NAME}"
 }
 
