@@ -116,31 +116,31 @@ task setup
 
 ## Functions
 
-zsh goenv includes a small utility `goenv` to fetch and install new packages.
+zsh rust includes a small utility `rust` to fetch and install new packages.
 
-#### `goenv::install`
+#### `rust::install`
 
-Install goenv.
+Install rust.
 
-#### `goenv::load`
+#### `rust::load`
 
-Load path goenv.
+Load path rust.
 
-#### `goenv::upgrade`
+#### `rust::upgrade`
 
-Upgrade version goenv.
+Upgrade version rust.
 
-#### `goenv::package::all::install`
+#### `rust::package::all::install`
 
-Install all package of goenv.
+Install all package of rust.
 
-#### `goenv::install::versions`
+#### `rust::install::versions`
 
-Install versions of config for goenv.
+Install versions of config for rust.
 
-#### `goenv::install::version::global`
+#### `rust::install::version::global`
 
-Install a version global of goenv.
+Install a version global of rust.
 
 ## Help
 
