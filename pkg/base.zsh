@@ -20,12 +20,16 @@ function rust::post_install {
     message_success "Success Install ${RUST_PACKAGE_NAME}"
 }
 
-function rust::upgrade {
-    rust::internal::rust::upgrade
-}
-
 function rust::package::all::install {
     rust::internal::packages::install
+}
+
+function rust::package::install {
+    rust::internal::package::install "${@}"
+}
+
+function rust::upgrade {
+    rust::internal::rust::upgrade
 }
 
 function rust::install::versions {
