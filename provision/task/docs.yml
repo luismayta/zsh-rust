@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   check:
@@ -15,28 +15,28 @@ tasks:
     run: once
     preconditions:
       - sh: command -v python
-        msg: 'Please Install python'
+        msg: "Please Install python"
 
   check:pipenv:
     desc: Exist Pipenv
     run: once
     preconditions:
       - sh: command -v pipenv
-        msg: 'Please Install pipenv'
+        msg: "Please Install pipenv"
 
   check:mkdocs:
     desc: Exist mkdocs
     run: once
     preconditions:
       - sh: test "pipenv run command -v mkdocs"
-        msg: 'Please Install mkdocs'
+        msg: "Please Install mkdocs"
 
   check:grip:
     desc: Exist grip
     run: once
     preconditions:
       - sh: test "pipenv run command -v grip"
-        msg: 'Please Install grip'
+        msg: "Please Install grip"
 
   show:
     desc: Show grip readme.
