@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   check:
@@ -12,7 +12,7 @@ tasks:
     run: once
     preconditions:
       - sh: command -v terraform
-        msg: 'Please Install terraform'
+        msg: "Please Install terraform"
 
   command:
     desc: generate docs using docs
