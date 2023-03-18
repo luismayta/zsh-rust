@@ -14,7 +14,6 @@ function rust::pkg::main::factory {
         source "${ZSH_RUST_PATH}"/pkg/linux.zsh
       ;;
     esac
-
     # shellcheck source=/dev/null
     source "${ZSH_RUST_PATH}"/pkg/helper.zsh
 
