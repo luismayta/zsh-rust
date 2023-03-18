@@ -475,6 +475,9 @@ poetry.toml
 # ruff
 .ruff_cache/
 
+# LSP config files
+pyrightconfig.json
+
 ### Sonar ###
 #Sonar generated dir
 /.sonar/

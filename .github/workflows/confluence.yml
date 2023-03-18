@@ -1,11 +1,7 @@
 name: confluence
 
 on:
-  workflow_run:
-    workflows:
-      - lint-code
-    types:
-      - completed
+  push:
     branches:
       - develop
       - main
