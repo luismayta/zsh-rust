@@ -10,6 +10,7 @@ export RUST_CARGO_PACKAGES=(
   du-dust
   bottom
   exa
+  zellij
   nu --features=dataframe
 )
 export RUST_RUSTUP_PACKAGES=(
