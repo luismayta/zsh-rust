@@ -382,18 +382,18 @@ crt = ["awscrt (==0.16.9)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.3.102"
+version = "2.3.105"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.3.102-py3-none-any.whl", hash = "sha256:0cfd439d2fe3a2de25836e512b7c1d05381e96d00ba0dcf7a1a3811b4c2d357e"},
-    {file = "bridgecrew-2.3.102.tar.gz", hash = "sha256:b6232371b5b7e3e019abd5b9bd4107144ac89ced8f90131160b689da47e3697d"},
+    {file = "bridgecrew-2.3.105-py3-none-any.whl", hash = "sha256:afe576967ed246cdbc106e350221b5265d2bc3707b15a9d2a2bc0f2bcb53b31a"},
+    {file = "bridgecrew-2.3.105.tar.gz", hash = "sha256:0affa65d2618cd18b004433a9ac210d0f50c9a55772ea30dda3e0d1e0e68714b"},
 ]
 
 [package.dependencies]
-checkov = "2.3.102"
+checkov = "2.3.105"
 
 [[package]]
 name = "bump2version"
@@ -634,14 +634,14 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.3.102"
+version = "2.3.105"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "checkov-2.3.102-py3-none-any.whl", hash = "sha256:a89d949a8b2ddebec2fc4f4ec8a8806481f93964ba797ac8624c19c8d2529e77"},
-    {file = "checkov-2.3.102.tar.gz", hash = "sha256:8546196feb75c1a0fb67048f292ebff93dd74f286ac9c39880a39f52058d9963"},
+    {file = "checkov-2.3.105-py3-none-any.whl", hash = "sha256:02cee911c2211b980b3e4b9cc25ab8d448295700e13ba88e623a2e297f83ed1d"},
+    {file = "checkov-2.3.105.tar.gz", hash = "sha256:57832fa4c53605b4cda7a3892b82fb278929333467ba372c431ae300e1736dc6"},
 ]
 
 [package.dependencies]
@@ -663,7 +663,7 @@ cyclonedx-python-lib = ">=2.4.0,<4.0.0"
 deep-merge = "*"
 docker = "*"
 dockerfile-parse = "*"
-dpath = ">=1.5.0,<2"
+dpath = ">=2.1.0"
 gitpython = "*"
 igraph = "*"
 importlib-metadata = ">=0.12"
@@ -938,13 +938,14 @@ files = [
 
 [[package]]
 name = "dpath"
-version = "1.5.0"
+version = "2.1.4"
 description = "Filesystem-like pathing and searching for dictionaries"
 category = "dev"
 optional = false
-python-versions = "*"
+python-versions = ">=3.7"
 files = [
-    {file = "dpath-1.5.0.tar.gz", hash = "sha256:496615b4ea84236d18e0d286122de74869a60e0f87e2c7ec6787ff286c48361b"},
+    {file = "dpath-2.1.4-py3-none-any.whl", hash = "sha256:3a4f6cc07e3a1b34bc73baa3a6854ee0a48fb2cf18a8c9b1911b66fd72afaa85"},
+    {file = "dpath-2.1.4.tar.gz", hash = "sha256:3380a77d0db4abf104125860ff6eb4bd07c97c65b81aad42a609717089a1bed0"},
 ]
 
 [[package]]
