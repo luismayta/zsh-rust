@@ -219,14 +219,14 @@ tests-no-zope = ["cloudpickle", "cloudpickle", "hypothesis", "hypothesis", "mypy
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.4.15"
+version = "1.4.16"
 description = "Tool for detecting secrets in the codebase"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "bc-detect-secrets-1.4.15.tar.gz", hash = "sha256:94096a92aeb3e09c6298b5fd61a26c6497add8ca9f14ad435f19cca8b2660998"},
-    {file = "bc_detect_secrets-1.4.15-py3-none-any.whl", hash = "sha256:66046022a026b0651ae7e20bbdcfd974041ede60162a79bf828013fc2321d49d"},
+    {file = "bc-detect-secrets-1.4.16.tar.gz", hash = "sha256:16338bd88cf7a3375b73fbb7c73ca6651322c4112fa3d7a48d6d111aa013e9eb"},
+    {file = "bc_detect_secrets-1.4.16-py3-none-any.whl", hash = "sha256:73eb9ec225f9019b48ed5e6bd6c602256d938bf92059a7f7abe3ffd3ccd7905e"},
 ]
 
 [package.dependencies]
@@ -381,18 +381,18 @@ crt = ["awscrt (==0.16.9)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.3.124"
+version = "2.3.128"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.3.124-py3-none-any.whl", hash = "sha256:c3f88ad19912ebd23ab0902e316d63ea5cae8bd3360f741e3cd58dc53482682c"},
-    {file = "bridgecrew-2.3.124.tar.gz", hash = "sha256:58944e84ca1e77f02b317f8f9083502261e649ae6d1159543eaba0bcb5b62d30"},
+    {file = "bridgecrew-2.3.128-py3-none-any.whl", hash = "sha256:5c6983af382104a06aaf35340ff7bbb803067d8c5c784aab68450ca37c27026b"},
+    {file = "bridgecrew-2.3.128.tar.gz", hash = "sha256:caddc99b680bb685495d17330a8d6e787cc6ca9af2268ec0a83be8401e173b63"},
 ]
 
 [package.dependencies]
-checkov = "2.3.124"
+checkov = "2.3.128"
 
 [[package]]
 name = "bump2version"
@@ -633,14 +633,14 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.3.124"
+version = "2.3.128"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "checkov-2.3.124-py3-none-any.whl", hash = "sha256:9f42659c499e569ca3fa1677d1ebda0d7b5a92f2f7e36deb0cabfbb7d8d45d30"},
-    {file = "checkov-2.3.124.tar.gz", hash = "sha256:c5aaee5452e4299d8280e76106792814d2797a9fa2492f926bd34d8f81c8eaa6"},
+    {file = "checkov-2.3.128-py3-none-any.whl", hash = "sha256:8d1b6ab5bded6a358cdcbea097571a199a600717643b68dd8b226c81bb896f6f"},
+    {file = "checkov-2.3.128.tar.gz", hash = "sha256:bf129db916d9017de02502637f2b02b3464e66f9c37b40d3146c5d58b85ede52"},
 ]
 
 [package.dependencies]
@@ -648,7 +648,7 @@ aiodns = "*"
 aiohttp = "*"
 aiomultiprocess = "*"
 argcomplete = "*"
-bc-detect-secrets = "1.4.15"
+bc-detect-secrets = "1.4.16"
 bc-jsonpath-ng = "1.5.9"
 bc-python-hcl2 = "0.3.51"
 boto3 = ">=1.17"
@@ -662,7 +662,7 @@ cyclonedx-python-lib = ">=2.4.0,<4.0.0"
 deep-merge = "*"
 docker = "*"
 dockerfile-parse = "*"
-dpath = ">=2.1.0"
+dpath = "2.1.3"
 gitpython = "*"
 igraph = "*"
 importlib-metadata = ">=0.12"
@@ -937,14 +937,14 @@ files = [
 
 [[package]]
 name = "dpath"
-version = "2.1.5"
+version = "2.1.3"
 description = "Filesystem-like pathing and searching for dictionaries"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "dpath-2.1.5-py3-none-any.whl", hash = "sha256:559edcbfc806ca2f9ad9e63566f22e5d41c000e4215bbce9dbf1ca4c859f5e0b"},
-    {file = "dpath-2.1.5.tar.gz", hash = "sha256:ccd964db839baad4aa820612b4b8731b09f40a245d401b723156ce4ef45b22b7"},
+    {file = "dpath-2.1.3-py3-none-any.whl", hash = "sha256:d9560e03ccd83b3c6f29988b0162ce9b34fd28b9d8dbda46663b20c68d9cdae3"},
+    {file = "dpath-2.1.3.tar.gz", hash = "sha256:d1a7a0e6427d0a4156c792c82caf1f0109603f68ace792e36ca4596fd2cb8d9d"},
 ]
 
 [[package]]
