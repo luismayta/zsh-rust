@@ -18,5 +18,7 @@ function rust::internal::main::factory {
 
 rust::internal::main::factory
 
+rust::internal::rust::load
+
 if ! core::exists curl; then core::install curl; fi
-if ! type -p rustc > /dev/null; then rust::internal::rust::install; fi
+if ! core::exists rustc; then rust::internal::rust::install; fi
