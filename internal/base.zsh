@@ -22,6 +22,8 @@ function rust::internal::package::install {
 
 function rust::internal::rust::load {
     [ -e "${RUST_CARGO_BIN}" ] && export PATH="${RUST_CARGO_BIN}:${PATH}"
+    # shellcheck source=/dev/null
+    [ -e "${RUST_CARGO_ENV}" ] && source "${RUST_CARGO_ENV}"
 }
 
 function rust::internal::packages::install {
