@@ -219,14 +219,14 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.4.27"
+version = "1.4.28"
 description = "Tool for detecting secrets in the codebase"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "bc-detect-secrets-1.4.27.tar.gz", hash = "sha256:4a09c2d0269c601e4364512ca28fc5d501584ecd32fd339364092a9ae169763f"},
-    {file = "bc_detect_secrets-1.4.27-py3-none-any.whl", hash = "sha256:f705a670ee47afc7c5efafdfeb94f526d44462416c529b736ecf9becd4a66e02"},
+    {file = "bc-detect-secrets-1.4.28.tar.gz", hash = "sha256:e6c782f9033612349d01f79ad8899d9dd5ed8e582b355d5d368fda6f6d64b4fc"},
+    {file = "bc_detect_secrets-1.4.28-py3-none-any.whl", hash = "sha256:3582b2749ae38c53c44f7c16c6a00c1bd2da5ccef88670043b410079f2304fd2"},
 ]
 
 [package.dependencies]
@@ -352,6 +352,18 @@ files = [
 ]
 
 [[package]]
+name = "boolean-py"
+version = "4.0"
+description = "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL."
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "boolean.py-4.0-py3-none-any.whl", hash = "sha256:2876f2051d7d6394a531d82dc6eb407faa0b01a0a0b3083817ccd7323b8d96bd"},
+    {file = "boolean.py-4.0.tar.gz", hash = "sha256:17b9a181630e43dde1851d42bef546d616d5d9b4480357514597e78b203d06e4"},
+]
+
+[[package]]
 name = "boto3"
 version = "1.26.123"
 description = "The AWS SDK for Python"
@@ -393,18 +405,18 @@ crt = ["awscrt (==0.16.9)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.3.245"
+version = "2.3.247"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.3.245-py3-none-any.whl", hash = "sha256:608bb081efe1522cd66c66035732d1b35b3c179dd70de5daf73d4b21c02411c1"},
-    {file = "bridgecrew-2.3.245.tar.gz", hash = "sha256:abb682de53ceedcd82cb43fce3fe1d9f49fee445bb0f779c2da5c47b6bda6067"},
+    {file = "bridgecrew-2.3.247-py3-none-any.whl", hash = "sha256:43c0fe6082b226f0197e1a0c177a0f067b4caaa6add47653b6b2ab27995af436"},
+    {file = "bridgecrew-2.3.247.tar.gz", hash = "sha256:75aec4694ca767ffcf457da6ff86925b2c2d8230b77d5476b8dac08a5a651438"},
 ]
 
 [package.dependencies]
-checkov = "2.3.245"
+checkov = "2.3.247"
 
 [[package]]
 name = "bump2version"
@@ -645,14 +657,14 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.3.245"
+version = "2.3.247"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "checkov-2.3.245-py3-none-any.whl", hash = "sha256:221470d2caa4471e9c1a646705a381da6079f02f11b243fec535ad1c4c32f963"},
-    {file = "checkov-2.3.245.tar.gz", hash = "sha256:17b2b29d722e9f08d94855d29dbd8c4ceda8c1f35f076ff47702d23ed2b1bbd2"},
+    {file = "checkov-2.3.247-py3-none-any.whl", hash = "sha256:650e9b53d238f711213faf6cbe6f0a4d12e5524d45d28f245e4436f83c73b33b"},
+    {file = "checkov-2.3.247.tar.gz", hash = "sha256:a99f62405615455b7619fb92361a4a4662b84f8178cd58fbbba6aa33728f04d1"},
 ]
 
 [package.dependencies]
@@ -660,7 +672,7 @@ aiodns = "*"
 aiohttp = "*"
 aiomultiprocess = "*"
 argcomplete = "*"
-bc-detect-secrets = "1.4.27"
+bc-detect-secrets = "1.4.28"
 bc-jsonpath-ng = "1.5.9"
 bc-python-hcl2 = "0.3.51"
 boto3 = ">=1.17"
@@ -681,6 +693,7 @@ importlib-metadata = ">=0.12"
 jmespath = "*"
 jsonschema = ">=4.6.0,<5.0.0"
 junit-xml = ">=1.9"
+license-expression = "30.1.0"
 networkx = "<2.7"
 openai = "*"
 packageurl-python = "*"
@@ -694,6 +707,7 @@ pyyaml = ">=5.4.1"
 requests = ">=2.27.0"
 schema = "*"
 semantic-version = "*"
+spdx-tools = "<0.8.0"
 tabulate = "*"
 termcolor = "*"
 tqdm = "*"
@@ -1317,6 +1331,21 @@ files = [
 ]
 
 [[package]]
+name = "isodate"
+version = "0.6.1"
+description = "An ISO 8601 date/time/duration parser and formatter"
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "isodate-0.6.1-py2.py3-none-any.whl", hash = "sha256:0751eece944162659049d35f4f549ed815792b38793f07cf73381c1c87cbed96"},
+    {file = "isodate-0.6.1.tar.gz", hash = "sha256:48c5881de7e8b0a0d648cb024c8062dc84e7b840ed81e864c7614fd3c127bde9"},
+]
+
+[package.dependencies]
+six = "*"
+
+[[package]]
 name = "isort"
 version = "5.12.0"
 description = "A Python utility / library to sort Python imports."
@@ -1475,6 +1504,25 @@ files = [
     {file = "lazy_object_proxy-1.9.0-cp39-cp39-win32.whl", hash = "sha256:9090d8e53235aa280fc9239a86ae3ea8ac58eff66a705fa6aa2ec4968b95c821"},
     {file = "lazy_object_proxy-1.9.0-cp39-cp39-win_amd64.whl", hash = "sha256:db1c1722726f47e10e0b5fdbf15ac3b8adb58c091d12b3ab713965795036985f"},
 ]
+
+[[package]]
+name = "license-expression"
+version = "30.1.0"
+description = "license-expression is a comprehensive utility library to parse, compare, simplify and normalize license expressions (such as SPDX license expressions) using boolean logic."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "license-expression-30.1.0.tar.gz", hash = "sha256:943b1d2cde251bd30a166b509f78990fdd060be9750f3f1a324571e804857a53"},
+    {file = "license_expression-30.1.0-py3-none-any.whl", hash = "sha256:02c48c802b8f001c8b7bc8f3b9cf6a40e88ef95a897b0ff2c05f74c69855a492"},
+]
+
+[package.dependencies]
+"boolean.py" = ">=4.0"
+
+[package.extras]
+docs = ["Sphinx (>=3.3.1)", "doc8 (>=0.8.1)", "sphinx-rtd-theme (>=0.5.0)", "sphinxcontrib-apidoc (>=0.3.0)"]
+testing = ["black", "isort", "pytest (>=6,!=7.0.0)", "pytest-xdist (>=2)", "twine"]
 
 [[package]]
 name = "markdown"
@@ -2238,6 +2286,21 @@ markdown = ">=3.2"
 pyyaml = "*"
 
 [[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "dev"
+optional = false
+python-versions = ">=3.6.8"
+files = [
+    {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
+    {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
+]
+
+[package.extras]
+diagrams = ["jinja2", "railroad-diagrams"]
+
+[[package]]
 name = "pyrsistent"
 version = "0.19.3"
 description = "Persistent/Functional/Immutable data structures"
@@ -2453,6 +2516,28 @@ files = [
 
 [package.dependencies]
 pyyaml = "*"
+
+[[package]]
+name = "rdflib"
+version = "6.3.2"
+description = "RDFLib is a Python library for working with RDF, a simple yet powerful language for representing information."
+category = "dev"
+optional = false
+python-versions = ">=3.7,<4.0"
+files = [
+    {file = "rdflib-6.3.2-py3-none-any.whl", hash = "sha256:36b4e74a32aa1e4fa7b8719876fb192f19ecd45ff932ea5ebbd2e417a0247e63"},
+    {file = "rdflib-6.3.2.tar.gz", hash = "sha256:72af591ff704f4caacea7ecc0c5a9056b8553e0489dd4f35a9bc52dbd41522e0"},
+]
+
+[package.dependencies]
+isodate = ">=0.6.0,<0.7.0"
+pyparsing = ">=2.1.0,<4"
+
+[package.extras]
+berkeleydb = ["berkeleydb (>=18.1.0,<19.0.0)"]
+html = ["html5lib (>=1.0,<2.0)"]
+lxml = ["lxml (>=4.3.0,<5.0.0)"]
+networkx = ["networkx (>=2.0.0,<3.0.0)"]
 
 [[package]]
 name = "regex"
@@ -2687,6 +2772,29 @@ files = [
 ]
 
 [[package]]
+name = "spdx-tools"
+version = "0.7.1"
+description = "SPDX parser and tools."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "spdx-tools-0.7.1.tar.gz", hash = "sha256:975e6dbba88f105a8acb22abf53fe90f0e9d5635a2b9b1fe487781e969623b17"},
+    {file = "spdx_tools-0.7.1-py3-none-any.whl", hash = "sha256:c89bcf650fff162bd5bfeec2d8a22c21bd7946cf58d54201401a2f70656f868a"},
+]
+
+[package.dependencies]
+click = "*"
+ply = "*"
+pyyaml = "*"
+rdflib = "*"
+uritools = "*"
+xmltodict = "*"
+
+[package.extras]
+test = ["pytest"]
+
+[[package]]
 name = "stevedore"
 version = "5.0.0"
 description = "Manage dynamic plugins for Python applications"
@@ -2843,6 +2951,18 @@ requests = ">=2.3.0"
 dev = ["black", "flake8", "pytest (>=2.7.3)"]
 lint = ["black", "flake8"]
 test = ["pytest (>=2.7.3)"]
+
+[[package]]
+name = "uritools"
+version = "4.0.1"
+description = "URI parsing, classification and composition"
+category = "dev"
+optional = false
+python-versions = "~=3.7"
+files = [
+    {file = "uritools-4.0.1-py3-none-any.whl", hash = "sha256:d122d394ed6e6e15ac0fddba6a5b19e9fa204e7797507815cbfb0e1455ac0475"},
+    {file = "uritools-4.0.1.tar.gz", hash = "sha256:efc5c3a6de05404850685a8d3f34da8476b56aa3516fbf8eff5c8704c7a2826f"},
+]
 
 [[package]]
 name = "urllib3"
@@ -3052,6 +3172,18 @@ files = [
     {file = "wrapt-1.15.0-cp39-cp39-win_amd64.whl", hash = "sha256:eef4d64c650f33347c1f9266fa5ae001440b232ad9b98f1f43dfe7a79435c0a6"},
     {file = "wrapt-1.15.0-py3-none-any.whl", hash = "sha256:64b1df0f83706b4ef4cfb4fb0e4c2669100fd7ecacfb59e091fad300d4e04640"},
     {file = "wrapt-1.15.0.tar.gz", hash = "sha256:d06730c6aed78cee4126234cf2d071e01b44b915e725a6cb439a879ec9754a3a"},
+]
+
+[[package]]
+name = "xmltodict"
+version = "0.13.0"
+description = "Makes working with XML feel like you are working with JSON"
+category = "dev"
+optional = false
+python-versions = ">=3.4"
+files = [
+    {file = "xmltodict-0.13.0-py2.py3-none-any.whl", hash = "sha256:aa89e8fd76320154a40d19a0df04a4695fb9dc5ba977cbb68ab3e4eb225e7852"},
+    {file = "xmltodict-0.13.0.tar.gz", hash = "sha256:341595a488e3e01a85a9d8911d8912fd922ede5fecc4dce437eb4b6c8d037e56"},
 ]
 
 [[package]]
