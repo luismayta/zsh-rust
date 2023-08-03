@@ -402,18 +402,18 @@ crt = ["awscrt (==0.16.9)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.3.354"
+version = "2.3.356"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.3.354-py3-none-any.whl", hash = "sha256:e1b327b3e2af96568126c798ceba2f2fd6fe2ce545823eb2d244c56fd95733d5"},
-    {file = "bridgecrew-2.3.354.tar.gz", hash = "sha256:483f7ae11cc03abcc9b5f2de3c8586e59fc366e3cae99d1320381a26271b8d39"},
+    {file = "bridgecrew-2.3.356-py3-none-any.whl", hash = "sha256:d51ec32166b895dc3c5e1b97e1cf85476d4312a6b3f41e603d3246fb6003661a"},
+    {file = "bridgecrew-2.3.356.tar.gz", hash = "sha256:08e7dfb18eaa9c277ff4bbf2e9f3f57dab19caa7594295fd24c385a6155ab453"},
 ]
 
 [package.dependencies]
-checkov = "2.3.354"
+checkov = "2.3.356"
 
 [[package]]
 name = "bump2version"
@@ -654,14 +654,14 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.3.354"
+version = "2.3.356"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "checkov-2.3.354-py3-none-any.whl", hash = "sha256:1214c68c34f15b424d4a3627f861710ceb20f2ab048cb7b7b30a64cb0bbc6a03"},
-    {file = "checkov-2.3.354.tar.gz", hash = "sha256:83fac3eb6ed663a93f712974938e93618b8a9623677b3e8111c61ae71e1780bd"},
+    {file = "checkov-2.3.356-py3-none-any.whl", hash = "sha256:ef2f698114bf08f8500254ca9c17701c303d45487a7761acdf94f116478cce0f"},
+    {file = "checkov-2.3.356.tar.gz", hash = "sha256:f5a018614482a7049023a0ebf58488cb1341ed745fd1df25c55c4a5f07519efa"},
 ]
 
 [package.dependencies]
