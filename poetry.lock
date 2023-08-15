@@ -271,6 +271,25 @@ importlib-resources = {version = ">=2.0.0", markers = "python_version < \"3.9\""
 lark = ">=1.0.0"
 
 [[package]]
+name = "beartype"
+version = "0.15.0"
+description = "Unbearably fast runtime type checking in pure Python."
+category = "dev"
+optional = false
+python-versions = ">=3.8.0"
+files = [
+    {file = "beartype-0.15.0-py3-none-any.whl", hash = "sha256:52cd2edea72fdd84e4e7f8011a9e3007bf0125c3d6d7219e937b9d8868169177"},
+    {file = "beartype-0.15.0.tar.gz", hash = "sha256:2af6a8d8a7267ccf7d271e1a3bd908afbc025d2a09aa51123567d7d7b37438df"},
+]
+
+[package.extras]
+all = ["typing-extensions (>=3.10.0.0)"]
+dev = ["autoapi (>=0.9.0)", "coverage (>=5.5)", "mypy (>=0.800)", "numpy", "pandera", "pydata-sphinx-theme (<=0.7.2)", "pytest (>=4.0.0)", "sphinx", "sphinx (>=4.2.0,<6.0.0)", "sphinxext-opengraph (>=0.7.5)", "tox (>=3.20.1)", "typing-extensions (>=3.10.0.0)"]
+doc-rtd = ["autoapi (>=0.9.0)", "pydata-sphinx-theme (<=0.7.2)", "sphinx (>=4.2.0,<6.0.0)", "sphinxext-opengraph (>=0.7.5)"]
+test-tox = ["mypy (>=0.800)", "numpy", "pandera", "pytest (>=4.0.0)", "sphinx", "typing-extensions (>=3.10.0.0)"]
+test-tox-coverage = ["coverage (>=5.5)"]
+
+[[package]]
 name = "beautifulsoup4"
 version = "4.12.2"
 description = "Screen-scraping library"
@@ -402,18 +421,18 @@ crt = ["awscrt (==0.16.9)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.3.361"
+version = "2.3.366"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.3.361-py3-none-any.whl", hash = "sha256:4ee343e20e28ecccd70ec19be34aa3c33d0e994e9838e71d61a7d075d4cbc148"},
-    {file = "bridgecrew-2.3.361.tar.gz", hash = "sha256:8a179c35fffcefdad59cc6c75f9c46a4b525aef0f01315248b386ba58f68949b"},
+    {file = "bridgecrew-2.3.366-py3-none-any.whl", hash = "sha256:54223d10f28fdfd28212999c992c987ddf254d04c414bb66e80fc9fa0471342f"},
+    {file = "bridgecrew-2.3.366.tar.gz", hash = "sha256:f4f16c8a476c3ca70a0fcd3710ea4babe2ce3e3a066d54e55910ec0eb561689e"},
 ]
 
 [package.dependencies]
-checkov = "2.3.361"
+checkov = "2.3.366"
 
 [[package]]
 name = "bump2version"
@@ -654,14 +673,14 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.3.361"
+version = "2.3.366"
 description = "Infrastructure as code static analysis"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "checkov-2.3.361-py3-none-any.whl", hash = "sha256:328639365fb157f749c562680ea20ed7faf016d280869ad72e83701a4742f5db"},
-    {file = "checkov-2.3.361.tar.gz", hash = "sha256:d871dcdd56f409f24b7d68d67344a5722843510dee6a7d29e3165bc4cde803ca"},
+    {file = "checkov-2.3.366-py3-none-any.whl", hash = "sha256:ff908a24009f125fffedf27f98e02cd887ff177cfc0d254a5b52f1606dd8e72e"},
+    {file = "checkov-2.3.366.tar.gz", hash = "sha256:040ba8dd30559992c4b01be7c82f813f0b3d6193130cd634ed5c55cf37ec71a9"},
 ]
 
 [package.dependencies]
@@ -690,7 +709,7 @@ importlib-metadata = ">=0.12"
 jmespath = "*"
 jsonschema = ">=4.6.0,<5.0.0"
 junit-xml = ">=1.9"
-license-expression = "30.1.0"
+license-expression = "*"
 networkx = "<2.7"
 openai = "*"
 packageurl-python = "*"
@@ -704,7 +723,7 @@ pyyaml = ">=5.4.1"
 requests = ">=2.27.0"
 schema = "*"
 semantic-version = "*"
-spdx-tools = "<0.8.0"
+spdx-tools = ">=0.8.0,<0.9.0"
 tabulate = "*"
 termcolor = "*"
 tqdm = "*"
@@ -2768,26 +2787,32 @@ files = [
 
 [[package]]
 name = "spdx-tools"
-version = "0.7.1"
+version = "0.8.0"
 description = "SPDX parser and tools."
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "spdx-tools-0.7.1.tar.gz", hash = "sha256:975e6dbba88f105a8acb22abf53fe90f0e9d5635a2b9b1fe487781e969623b17"},
-    {file = "spdx_tools-0.7.1-py3-none-any.whl", hash = "sha256:c89bcf650fff162bd5bfeec2d8a22c21bd7946cf58d54201401a2f70656f868a"},
+    {file = "spdx-tools-0.8.0.tar.gz", hash = "sha256:66809bf78783b47147dcaf69a63bb9d561eb45e6b2ec15c2e8fe1550e24ae1cd"},
+    {file = "spdx_tools-0.8.0-py3-none-any.whl", hash = "sha256:d57669c2e66f3ba2bfe253a3d9952e8761858e1af4084cd5bec43994099eda9d"},
 ]
 
 [package.dependencies]
+beartype = "*"
 click = "*"
+license-expression = "*"
 ply = "*"
 pyyaml = "*"
 rdflib = "*"
+semantic-version = "*"
 uritools = "*"
 xmltodict = "*"
 
 [package.extras]
-test = ["pytest"]
+code-style = ["black", "flake8", "isort"]
+development = ["black", "flake8", "isort", "networkx", "pytest"]
+graph-generation = ["networkx", "pygraphviz"]
+test = ["pyshacl", "pytest"]
 
 [[package]]
 name = "stevedore"
