@@ -3,7 +3,7 @@
 
 function rust::internal::rust::install {
     message_info "Installing ${RUST_PACKAGE_NAME}"
-    curl https://sh.rustup.rs -sSf | sh -
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
     message_success "Installed ${RUST_PACKAGE_NAME}"
 }
 

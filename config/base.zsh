@@ -12,6 +12,7 @@ export RUST_CARGO_PACKAGES=(
   bottom
   exa
   zellij
+  typos-cli
   nu --features=dataframe
 )
 export RUST_RUSTUP_PACKAGES=(
