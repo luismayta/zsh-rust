@@ -105,9 +105,8 @@ tasks:
     run: once
     desc: Execute upgrade packages
     cmds:
-      - >-
-        poetry update
-        poetry run pre-commit autoupdate
+      - poetry update
+      - poetry run pre-commit autoupdate
 
   setup:
     desc: Setup dependences of project
