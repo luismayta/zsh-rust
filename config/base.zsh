@@ -13,8 +13,10 @@ export RUST_CARGO_PACKAGES=(
   exa
   zellij
   typos-cli
+  committed
   nu --features=dataframe
 )
+
 export RUST_RUSTUP_PACKAGES=(
   nightly
 )
