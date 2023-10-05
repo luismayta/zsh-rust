@@ -417,17 +417,17 @@ crt = ["awscrt (==0.16.26)"]
 
 [[package]]
 name = "bridgecrew"
-version = "2.4.60"
+version = "2.5.4"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-2.4.60-py3-none-any.whl", hash = "sha256:1a71be8781d9b4f5b1b275d4f159a6491169cb665a771a8d4da517695aade1b0"},
-    {file = "bridgecrew-2.4.60.tar.gz", hash = "sha256:0ad432e67c4b8f7391b45c7b87a31e40fa2e8c73323b46beb912bf99d70cd5b8"},
+    {file = "bridgecrew-2.5.4-py3-none-any.whl", hash = "sha256:9f0c26f4853302a676c9a86db872fce042ecda6d78fe98f7daa152c970ede74c"},
+    {file = "bridgecrew-2.5.4.tar.gz", hash = "sha256:e47559d0959934b17ae428a9f959c26de9ec38e88aee56e0939995bc8a0eaef2"},
 ]
 
 [package.dependencies]
-checkov = "2.4.60"
+checkov = "2.5.4"
 
 [[package]]
 name = "bump2version"
@@ -663,13 +663,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "2.4.60"
+version = "2.5.4"
 description = "Infrastructure as code static analysis"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "checkov-2.4.60-py3-none-any.whl", hash = "sha256:eca59d6d563d18183288e725f94ed726626631903e89341f98f9ae6702ad2255"},
-    {file = "checkov-2.4.60.tar.gz", hash = "sha256:8ca8e2c165cfcaf425e331b59e4689d362ea624ba1fb03aea9e455956688184e"},
+    {file = "checkov-2.5.4-py3-none-any.whl", hash = "sha256:8857371e1b9bff55702b3643cf33e79a90e5726e052d3eacfd14283f95f111f6"},
+    {file = "checkov-2.5.4.tar.gz", hash = "sha256:b645b86b52d83e5f4086bcd4c94c82b081d450b7beccdfe9039286d52a37f4f4"},
 ]
 
 [package.dependencies]
@@ -688,7 +688,6 @@ cloudsplaining = ">=0.4.3"
 colorama = "*"
 configargparse = "*"
 cyclonedx-python-lib = ">=2.4.0,<4.0.0"
-deep-merge = "*"
 docker = "*"
 dockerfile-parse = "*"
 dpath = "2.1.3"
@@ -843,17 +842,6 @@ python-versions = ">=3.5"
 files = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
     {file = "decorator-5.1.1.tar.gz", hash = "sha256:637996211036b6385ef91435e4fae22989472f9d571faba8927ba8253acbc330"},
-]
-
-[[package]]
-name = "deep-merge"
-version = "0.0.4"
-description = "A simple utility for merging python dictionaries."
-optional = false
-python-versions = "*"
-files = [
-    {file = "deep_merge-0.0.4-py3-none-any.whl", hash = "sha256:8056b4b43c6dfddf5c7b1feb3a09f1ab1cbd74e8382e43736ea8c5619e8e5a4e"},
-    {file = "deep_merge-0.0.4.tar.gz", hash = "sha256:b54415f90934c42e334114e2864cb4d4e7335b34ad396e35ad8610c96065a47e"},
 ]
 
 [[package]]
