@@ -380,17 +380,17 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.34.25"
+version = "1.34.37"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">= 3.8"
 files = [
-    {file = "boto3-1.34.25-py3-none-any.whl", hash = "sha256:87532469188f1eeef4dca67dffbd3f0cc1d51cef7d5e5b5dc95d3b8125f8446e"},
-    {file = "boto3-1.34.25.tar.gz", hash = "sha256:1b415e0553679ea05b9e2aed3eb271431011a67a165e3e0aefa323e13b8b7e92"},
+    {file = "boto3-1.34.37-py3-none-any.whl", hash = "sha256:65acfe7f1cf2a9b7df3d4edb87c8022e02685825bd1957e7bb678cc0d09f5e5f"},
+    {file = "boto3-1.34.37.tar.gz", hash = "sha256:73f5ec89cb3ddb3ed577317889fd2f2df783f66b6502a9a4239979607e33bf74"},
 ]
 
 [package.dependencies]
-botocore = ">=1.34.25,<1.35.0"
+botocore = ">=1.34.37,<1.35.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -399,13 +399,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.25"
+version = "1.34.37"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">= 3.8"
 files = [
-    {file = "botocore-1.34.25-py3-none-any.whl", hash = "sha256:35dfab5bdb4620f73ac7c557c4e0d012429706d8760b100f099feea34b5505f8"},
-    {file = "botocore-1.34.25.tar.gz", hash = "sha256:a39070bb760bd9545b0eef52a8bcb2d03918206e67a5a786ea4bd6f4bd949edd"},
+    {file = "botocore-1.34.37-py3-none-any.whl", hash = "sha256:2a5bf33aacd2d970afd3d492e179e06ea98a5469030d5cfe7a2ad9995f7bb2ef"},
+    {file = "botocore-1.34.37.tar.gz", hash = "sha256:3c46ddb1679e6ef45ca78b48665398636bda532a07cd476e4b500697d13d9a99"},
 ]
 
 [package.dependencies]
@@ -421,17 +421,17 @@ crt = ["awscrt (==0.19.19)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.17"
+version = "3.2.10"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.17-py3-none-any.whl", hash = "sha256:107886c03180ab2f7ad89e43e0a62a50a09afc95f62e03bd749201085a2ecd69"},
-    {file = "bridgecrew-3.2.17.tar.gz", hash = "sha256:54fa8fbde504f3c5a4fb0140f48b146c375d802730c0a5460c96a4e52fa4a40d"},
+    {file = "bridgecrew-3.2.10-py3-none-any.whl", hash = "sha256:42da603d788707a12a0c001134f08ea52502aa8096e57bbf93e151d326136161"},
+    {file = "bridgecrew-3.2.10.tar.gz", hash = "sha256:3e711346c12b6a94768e52d7561058f0cc1c5e67f267fe7feb6991a134d695d8"},
 ]
 
 [package.dependencies]
-checkov = "3.2.17"
+checkov = "3.2.10"
 
 [[package]]
 name = "bump2version"
@@ -667,13 +667,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.17"
+version = "3.2.10"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.17-py3-none-any.whl", hash = "sha256:537393c3cfad336c9e01d5ec9ecddcb134f430593c51ee1ab404736b898c8f6a"},
-    {file = "checkov-3.2.17.tar.gz", hash = "sha256:d66d022212ca8585ecf2d9ec2aab1252bd49baa5f0fc9f5b83d0f00b1f6b7559"},
+    {file = "checkov-3.2.10-py3-none-any.whl", hash = "sha256:6b16608d633327f37abb60641678e447e538914e9185a055882ed6641dbed18b"},
+    {file = "checkov-3.2.10.tar.gz", hash = "sha256:18156d7d3d8fc669717fe9924894ff76f4795745d835628f8c5c86f76446d630"},
 ]
 
 [package.dependencies]
@@ -684,8 +684,7 @@ argcomplete = ">=3.0.0,<4.0.0"
 bc-detect-secrets = "1.5.4"
 bc-jsonpath-ng = "1.6.1"
 bc-python-hcl2 = "0.4.2"
-boto3 = "1.34.25"
-botocore = "1.34.25"
+boto3 = ">=1.28.0,<2.0.0"
 cachetools = ">=5.2.0,<6.0.0"
 charset-normalizer = ">=3.1.0,<4.0.0"
 click = ">=8.1.0,<9.0.0"
