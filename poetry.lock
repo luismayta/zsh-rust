@@ -399,13 +399,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.36"
+version = "1.34.25"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">= 3.8"
 files = [
-    {file = "botocore-1.34.36-py3-none-any.whl", hash = "sha256:3f39ae0165f1a27f621fc91a46fb59f87e819671fad106c230dadcc724892f70"},
-    {file = "botocore-1.34.36.tar.gz", hash = "sha256:89c3dc15b6ffae146029df636d51b9952740051204c444ec765286b081c917bc"},
+    {file = "botocore-1.34.25-py3-none-any.whl", hash = "sha256:35dfab5bdb4620f73ac7c557c4e0d012429706d8760b100f099feea34b5505f8"},
+    {file = "botocore-1.34.25.tar.gz", hash = "sha256:a39070bb760bd9545b0eef52a8bcb2d03918206e67a5a786ea4bd6f4bd949edd"},
 ]
 
 [package.dependencies]
@@ -421,17 +421,17 @@ crt = ["awscrt (==0.19.19)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.12"
+version = "3.2.17"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.12-py3-none-any.whl", hash = "sha256:1f215a68d2ad067de7b341f3c8144ff9b14a11a38ae43f2d82d37515308ab612"},
-    {file = "bridgecrew-3.2.12.tar.gz", hash = "sha256:2989997b4edce29974c91b74b92232d54053763c7420a71edde28f6db3e7c006"},
+    {file = "bridgecrew-3.2.17-py3-none-any.whl", hash = "sha256:107886c03180ab2f7ad89e43e0a62a50a09afc95f62e03bd749201085a2ecd69"},
+    {file = "bridgecrew-3.2.17.tar.gz", hash = "sha256:54fa8fbde504f3c5a4fb0140f48b146c375d802730c0a5460c96a4e52fa4a40d"},
 ]
 
 [package.dependencies]
-checkov = "3.2.12"
+checkov = "3.2.17"
 
 [[package]]
 name = "bump2version"
@@ -667,13 +667,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.12"
+version = "3.2.17"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.12-py3-none-any.whl", hash = "sha256:82566bd820648f3f811f08b0d5cf5b2de5f1601e3da5e7bfa2fb92c7369162ea"},
-    {file = "checkov-3.2.12.tar.gz", hash = "sha256:32af7199421512728c5384e51c4e5ffb78b47fe3deec746b216aaeb8096d3295"},
+    {file = "checkov-3.2.17-py3-none-any.whl", hash = "sha256:537393c3cfad336c9e01d5ec9ecddcb134f430593c51ee1ab404736b898c8f6a"},
+    {file = "checkov-3.2.17.tar.gz", hash = "sha256:d66d022212ca8585ecf2d9ec2aab1252bd49baa5f0fc9f5b83d0f00b1f6b7559"},
 ]
 
 [package.dependencies]
@@ -685,6 +685,7 @@ bc-detect-secrets = "1.5.4"
 bc-jsonpath-ng = "1.6.1"
 bc-python-hcl2 = "0.4.2"
 boto3 = "1.34.25"
+botocore = "1.34.25"
 cachetools = ">=5.2.0,<6.0.0"
 charset-normalizer = ">=3.1.0,<4.0.0"
 click = ">=8.1.0,<9.0.0"
