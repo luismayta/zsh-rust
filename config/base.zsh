@@ -15,6 +15,7 @@ export RUST_CARGO_PACKAGES=(
   typos-cli
   committed
   nu --features=dataframe
+  btop
 )
 
 export RUST_RUSTUP_PACKAGES=(
