@@ -14,6 +14,7 @@ export RUST_CARGO_PACKAGES=(
   zellij
   typos-cli
   committed
+  zoxide --locked
   nu --features=dataframe
   btop
 )
