@@ -17,6 +17,7 @@ export RUST_CARGO_PACKAGES=(
   zoxide --locked
   nu --features=dataframe
   btop
+  create-tauri-app --locked
 )
 
 export RUST_RUSTUP_PACKAGES=(
