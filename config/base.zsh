@@ -18,6 +18,7 @@ export RUST_CARGO_PACKAGES=(
   nu --features=dataframe
   btop
   create-tauri-app --locked
+  eza
 )
 
 export RUST_RUSTUP_PACKAGES=(
