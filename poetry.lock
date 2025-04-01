@@ -455,17 +455,17 @@ crt = ["awscrt (==0.22.0)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.394"
+version = "3.2.395"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.394-py3-none-any.whl", hash = "sha256:284fd08301e2b82367d79f94fdc0e81014d43382d3b5d47f627508fd3cc79d5b"},
-    {file = "bridgecrew-3.2.394.tar.gz", hash = "sha256:b1a850e2ddd8e79f2016796758659503f5b9e8b1d56bae25a624855116c23f10"},
+    {file = "bridgecrew-3.2.395-py3-none-any.whl", hash = "sha256:cf0ff610fe6d787751566ceef03fc43c7d7838d37243756a0465d02430d79883"},
+    {file = "bridgecrew-3.2.395.tar.gz", hash = "sha256:222e7dce3d4248864b13a191cdaf01315c52c678516f3d20558ab813ad1a491e"},
 ]
 
 [package.dependencies]
-checkov = "3.2.394"
+checkov = "3.2.395"
 
 [[package]]
 name = "bump2version"
@@ -716,13 +716,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.394"
+version = "3.2.395"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.394-py3-none-any.whl", hash = "sha256:258dead7582484130f8f6bb450794288b0c6b728dfa1c44d5a220456c0a35bb1"},
-    {file = "checkov-3.2.394.tar.gz", hash = "sha256:cad1939056634cbd62476d77f411b2ac7248624917eb705ed9291db0be8d4aa6"},
+    {file = "checkov-3.2.395-py3-none-any.whl", hash = "sha256:4bc041a062c9184e8d8e492efa1bfba78b27b0b629bd3b614b68077d1fa730ca"},
+    {file = "checkov-3.2.395.tar.gz", hash = "sha256:e588d1edf2e6f5d60c806d295a15966cbe321c7c489411e4012f4de8db8a1750"},
 ]
 
 [package.dependencies]
@@ -761,7 +761,7 @@ pyston = {version = "2.3.5", markers = "python_version < \"3.11\" and (sys_platf
 pyston-autoload = {version = "2.3.5", markers = "python_version < \"3.11\" and (sys_platform == \"linux\" or sys_platform == \"darwin\") and platform_machine == \"x86_64\" and implementation_name == \"cpython\""}
 pyyaml = ">=6.0.0,<7.0.0"
 requests = ">=2.28.0,<3.0.0"
-rustworkx = ">=0.13.0,<0.14.0"
+rustworkx = ">=0.13.0,<1.0.0"
 schema = "<=0.7.5"
 spdx-tools = ">=0.8.0,<0.9.0"
 tabulate = ">=0.9.0,<0.10.0"
