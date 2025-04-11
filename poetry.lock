@@ -257,13 +257,13 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.5.38"
+version = "1.5.40"
 description = "Tool for detecting secrets in the codebase"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bc_detect_secrets-1.5.38-py3-none-any.whl", hash = "sha256:5d6412fcf6ca41e1cb353dddc31b1547465b3286ec29f5843c416b7d18f7afc7"},
-    {file = "bc_detect_secrets-1.5.38.tar.gz", hash = "sha256:26d8a34c09085958b5c27620a55145ae603254e309213d7a49b9c1fd683d2707"},
+    {file = "bc_detect_secrets-1.5.40-py3-none-any.whl", hash = "sha256:05cf26afcddf6296e09b16f498475b4adc026696bfe2ce50a1a916f88d14aca3"},
+    {file = "bc_detect_secrets-1.5.40.tar.gz", hash = "sha256:5982369c359ef58379a8234168a3820d9273cdc0776dcc0efe6904c2a37c51d8"},
 ]
 
 [package.dependencies]
@@ -455,17 +455,17 @@ crt = ["awscrt (==0.22.0)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.395"
+version = "3.2.403"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.395-py3-none-any.whl", hash = "sha256:cf0ff610fe6d787751566ceef03fc43c7d7838d37243756a0465d02430d79883"},
-    {file = "bridgecrew-3.2.395.tar.gz", hash = "sha256:222e7dce3d4248864b13a191cdaf01315c52c678516f3d20558ab813ad1a491e"},
+    {file = "bridgecrew-3.2.403-py3-none-any.whl", hash = "sha256:130d14d4463fae93ec8542e06c8bec860aba6b32d0674398a330fbfe7913d6f0"},
+    {file = "bridgecrew-3.2.403.tar.gz", hash = "sha256:6888a2bc9f26d2454c0f63454d3b35a1f0cb60865413ea11ea0fe86983489d1f"},
 ]
 
 [package.dependencies]
-checkov = "3.2.395"
+checkov = "3.2.403"
 
 [[package]]
 name = "bump2version"
@@ -716,13 +716,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.395"
+version = "3.2.403"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.395-py3-none-any.whl", hash = "sha256:4bc041a062c9184e8d8e492efa1bfba78b27b0b629bd3b614b68077d1fa730ca"},
-    {file = "checkov-3.2.395.tar.gz", hash = "sha256:e588d1edf2e6f5d60c806d295a15966cbe321c7c489411e4012f4de8db8a1750"},
+    {file = "checkov-3.2.403-py3-none-any.whl", hash = "sha256:90affe90e8cce2ad11fbd10e76ba1b7ff58659cd3d89b67782878b0c32ad463e"},
+    {file = "checkov-3.2.403.tar.gz", hash = "sha256:54fc255d83ae9e0762f451ee9cf120962f660690cd0483dad3c9a0c8eeabbc59"},
 ]
 
 [package.dependencies]
@@ -730,7 +730,7 @@ aiodns = ">=3.0.0,<4.0.0"
 aiohttp = ">=3.8.0,<4.0.0"
 aiomultiprocess = ">=0.9.0,<0.10.0"
 argcomplete = ">=3.0.0,<4.0.0"
-bc-detect-secrets = "1.5.38"
+bc-detect-secrets = "1.5.40"
 bc-jsonpath-ng = "1.6.1"
 bc-python-hcl2 = "0.4.2"
 boto3 = "1.35.49"
