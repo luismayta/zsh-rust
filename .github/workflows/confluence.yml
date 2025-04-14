@@ -12,6 +12,9 @@ on:
       # prerelease tags, more or less
       - "v[0-9]+.[0-9]+.[0-9]+-*"
 
+env:
+  TASK_X_REMOTE_TASKFILES: 1
+
 jobs:
   confluence:
     runs-on: ubuntu-20.04
