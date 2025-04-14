@@ -10,7 +10,6 @@ export RUST_CARGO_PACKAGES=(
   ripgrep
   du-dust
   bottom
-  exa
   zellij
   typos-cli
   committed
@@ -19,6 +18,7 @@ export RUST_CARGO_PACKAGES=(
   btop
   create-tauri-app --locked
   eza
+  delta
 )
 
 export RUST_RUSTUP_PACKAGES=(
