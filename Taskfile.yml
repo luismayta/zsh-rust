@@ -61,6 +61,7 @@ env:
   README_YAML: provision/generators/README.yaml
   README_TEMPLATE: provision/templates/README.tpl.md
   README_INCLUDES: file://
+  TERRAFORM_PATH: ./
 
 dotenv:
   - .env
@@ -71,7 +72,7 @@ vars:
   DOCKER_PLATFORM: linux/amd64
   REVIEWERS: luismayta
   PYTHON_VERSION: 3.11.5
-  NODE_VERSION: v20.9.0
+  NODE_VERSION: v20.18.3
   GIT_IGNORES: python,node,go,zsh,sonar,java,maven,intellij+all,terraform,linux
   GOLANGCI_VERSION: 1.42.0
   TERRAFORM_VERSION: 1.10.5
@@ -85,9 +86,12 @@ vars:
     .task
     .terraform.lock.hcl
     *.lock.hcl
+    *.lock
     *.zip
     .external_modules
     vendor
+    charts
+    .DS_Store
 
 tasks:
   default:
