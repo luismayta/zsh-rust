@@ -154,7 +154,7 @@ title = "gitleaks config"
 
 [[rules]]
     description = "Env Var"
-    regex = '''(?i)(apikey|secret|key|api|password|pass)=[0-9a-zA-Z-_.{}]{4,120}'''
+    regex = '''(?i)(apikey|secret|key|api|password|pass|pw|host)=[0-9a-zA-Z-_.{}]{4,120}'''
     tags = ["env"]
     [rules.allowlist]
         description = "ignore value fake"
@@ -162,8 +162,8 @@ title = "gitleaks config"
             '''host=HOST''',
             '''--private-key={{.PRIVATE_KEY_FILE}}''',
             '''PASSWORD=XXXXXX''',
+            '''password={password}''',
         ]
-
 
 [[rules]]
     description = "High Entropy"
@@ -249,6 +249,7 @@ title = "gitleaks config"
     '''^node_modules/''',
     '''^theme/''',
   ]
+
   files = [
     '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
     '''^\.gitignore$''',
