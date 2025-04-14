@@ -18,7 +18,7 @@ export RUST_CARGO_PACKAGES=(
   btop
   create-tauri-app --locked
   eza
-  delta
+  git-delta
 )
 
 export RUST_RUSTUP_PACKAGES=(
