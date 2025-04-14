@@ -90,7 +90,7 @@ to your `.zshrc` where you're adding your other plugins.
 
 ## Usage
 
-# How to use this project
+# 🚀 How to use this project
 
 ```bash
 task setup
@@ -105,7 +105,13 @@ task setup
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### Common
+## Common
+
+### Install Dependencies
+
+```bash
+task setup
+```
 
  <!-- Space: Projects -->
 <!-- Parent: ZshRust -->
@@ -169,7 +175,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2024 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2025 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 

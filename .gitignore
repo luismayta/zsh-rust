@@ -563,7 +563,10 @@ TMP_CHANGELOG.md
 .task
 .terraform.lock.hcl
 *.lock.hcl
+*.lock
 *.zip
 .external_modules
 vendor
+charts
+.DS_Store
 
