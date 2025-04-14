@@ -7,3 +7,7 @@ function rust::internal::delta::load {
   git config --global delta.navigate true
   git config --global merge.conflictStyle zdiff3
 }
+
+function rust::internal::zoxide::load {
+  eval "$(zoxide init zsh)"
+}

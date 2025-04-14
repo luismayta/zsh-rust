@@ -26,3 +26,4 @@ rust::internal::rust::load
 if ! core::exists curl; then core::install curl; fi
 if ! core::exists rustc; then rust::internal::rust::install; fi
 if ! core::exists delta; then rust::internal::delta::load; fi
+if ! core::exists zoxide; then rust::internal::zoxide::load; fi
