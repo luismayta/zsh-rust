@@ -19,6 +19,7 @@ export RUST_CARGO_PACKAGES=(
   create-tauri-app --locked
   eza
   git-delta
+  yazi-fm yazi-cli --locked
   --git https://github.com/astral-sh/uv uv
 )
 
