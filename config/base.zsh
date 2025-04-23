@@ -19,6 +19,7 @@ export RUST_CARGO_PACKAGES=(
   create-tauri-app --locked
   eza
   git-delta
+  --git https://github.com/astral-sh/uv uv
 )
 
 export RUST_RUSTUP_PACKAGES=(
