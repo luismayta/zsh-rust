@@ -11,6 +11,7 @@ exclude: >
     .+\.terraform.*$|
     .+\.venv.*$|
     .+\.lock$|
+    .+\.mdx$|
   )$
 
 repos:
@@ -22,12 +23,15 @@ repos:
           - --ignore-words=.ci/linters/.codespell-ignores
         exclude: >
           (?x)^(
+            go.mod|
+            go.sum|
+            app/ia/datasets\/.*$|
+            openapi.yaml|
             .+\.vendor\/.*$|
             .+\.node_modules\/.*$|
             .+\.sops.*$|
             .+\.lock$|
-            go.mod|
-            go.sum|
+            .+\.mdx$|
           )$
   - repo: https://github.com/alessandrojcm/commitlint-pre-commit-hook
     rev: v9.20.0
@@ -45,6 +49,7 @@ repos:
         exclude: >
           (?x)^(
             .+\.gitleaks.toml$|
+            test/fixtures/keys/.*-test.*$
           )$
       - id: check-merge-conflict
       - id: check-added-large-files

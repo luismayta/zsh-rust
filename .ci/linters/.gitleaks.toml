@@ -236,6 +236,7 @@ title = "gitleaks config"
     '''^yarn.lock$''',
     '''^vendor/(.*?)$''',
     '''^sonar-project.properties$''',
+    '''^test/fixtures/keys/.*-test.*$''',
     '''^node_modules/(.*?)$''',
   ]
   commits = []
@@ -257,6 +258,7 @@ title = "gitleaks config"
     '''^\.gitignore$''',
     '''^yarn.lock$''',
     '''^sonar-project.properties$''',
+    '''^test/fixtures/keys/.*-test.*$''',
   ]
 
   commits = []

@@ -4,8 +4,6 @@ version: "3"
 includes:
   pre-commit:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/pre-commit/Taskfile.yml"
-  github:
-    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/github/Taskfile.yml"
   changelog:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/changelog/Taskfile.yml"
   confluence:
@@ -14,16 +12,16 @@ includes:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/node/Taskfile.yml"
   python:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/python/Taskfile.yml"
+  uv:
+    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/uv/Taskfile.yml"
   pnpm:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/pnpm/Taskfile.yml"
-  sops:
-    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/sops/Taskfile.yml"
-  terraform:
-    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/terraform/Taskfile.yml"
-  terragrunt:
-    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/terragrunt/Taskfile.yml"
   go:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/go/Taskfile.yml"
+  gradle:
+    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/gradle/Taskfile.yml"
+  coursier:
+    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/coursier/Taskfile.yml"
   git:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/git/Taskfile.yml"
   docs:
@@ -46,6 +44,8 @@ includes:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/ssh/Taskfile.yml"
   openssl:
     taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/openssl/Taskfile.yml"
+  terraform:
+    taskfile: "https://raw.githubusercontent.com/hadenlabs/tasks/refs/heads/main/src/terraform/Taskfile.yml"
 
 env:
   DOCKER:
@@ -62,6 +62,7 @@ env:
   README_TEMPLATE: provision/templates/README.tpl.md
   README_INCLUDES: file://
   TERRAFORM_PATH: ./
+  PYTHON_PACKAGE_MANAGER: uv
 
 dotenv:
   - .env
@@ -69,29 +70,38 @@ dotenv:
 vars:
   PROJECT_NAME: zsh-rust
   ORGANIZATION: luismayta
+  USER: ubuntu
   DOCKER_PLATFORM: linux/amd64
   REVIEWERS: luismayta
   PYTHON_VERSION: 3.11.5
-  NODE_VERSION: v20.18.3
+  NODE_VERSION: v20.9.0
+  GRADLE_VERSION: 8.4.0
+  GOLANG_VERSION: 1.22.4
   GIT_IGNORES: python,node,go,zsh,sonar,java,maven,intellij+all,terraform,linux
   GOLANGCI_VERSION: 1.42.0
-  TERRAFORM_VERSION: 1.10.5
+  TERRAFORM_VERSION: 1.11.4
   README_FILE: README.md
   GIT_IGNORES_CUSTOM: |
     bin
+    .project
     .scannerwork
     .secrets
     public
     TMP_CHANGELOG.md
     .task
     .terraform.lock.hcl
+    build
+    .task
+    *.lock
     *.lock.hcl
+    .cq/
     *.lock
     *.zip
+    *.iml
     .external_modules
+    .pmd
     vendor
-    charts
-    .DS_Store
+    !uv.lock
 
 tasks:
   default:
@@ -117,12 +127,14 @@ tasks:
   check:
     desc: "Check all dependencies"
     deps:
-      - python:check
+      - uv:check
+      - pnpm:check
       - changelog:check
       - git:check
       - docs:check
 
   readme:
+    run: once
     desc: Generate Readme
     silent: true
     cmds:
@@ -134,32 +146,42 @@ tasks:
       - task: prettier
 
   prettier:
+    run: once
     desc: Execute prettier files
     cmds:
       - task: prettier:all
+      - task: uv:fmt
+
+  test:
+    desc: Execute of test
+    cmds:
+      - task: go:test
 
   upgrade:
+    run: once
     desc: Execute upgrade packages
     cmds:
-      - poetry update
-      - poetry run pre-commit autoupdate
+      - uv update
+      - uv run pre-commit autoupdate
 
   setup:
     desc: Setup dependences of project
     cmds:
       - >-
         [ -e ".env" ] || cp -rf .env.example .env
-      - task: python:setup
-      - task: python:precommit
+      - task: uv:setup
+      - task: uv:precommit
       - task: git:setup
-
-  test:
-    run: once
-    desc: Execute task test all
-    cmds:
-      - task: go:test
 
   environment:
     desc: Setup environment of project
     cmds:
-      - task: python:environment
+      - task: uv:environment
+
+  help:
+    cmds:
+      - cmd: |
+          echo 'Use "task --list" to get a list of all available tasks with a short description of what they do.'
+          echo 'There are some more tasks used as dependencies for other tasks.'
+          echo 'You can view them with "task --list-all".'
+        silent: true

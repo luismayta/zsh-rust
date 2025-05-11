@@ -17,6 +17,8 @@ function rust::internal::main::factory {
         source "${ZSH_RUST_PATH}"/internal/linux.zsh
       ;;
     esac
+    # shellcheck source=/dev/null
+    source "${ZSH_RUST_PATH}"/internal/helper.zsh
 }
 
 rust::internal::main::factory
